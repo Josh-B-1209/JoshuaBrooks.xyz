@@ -19,7 +19,6 @@
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
-
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
@@ -64,6 +63,14 @@
       {% endif %}
 
       <!-- Font Awesome icons / Repositories and software development -->
+      {% if author.arduino %}
+        <li><a href="https://www.arduino.cc/{{ author.arduino }}"><i class="fab fa-fw fa-arduino icon-pad-right" aria-hidden="true"></i>Arduino</a></li>
+      {% endif %}
+      {% if author.autodesk %}
+        <li><a href="https://www.autodesk.com/{{ author.autodesk }}"><i class="fab fa-fw fa-autodesk icon-pad-right" aria-hidden="true"></i>Autodesk</a></li>
+      {% endif %}
+
+      
       {% if author.bitbucket %}
         <li><a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket icon-pad-right" aria-hidden="true"></i>Bitbucket</a></li>
       {% endif %}
@@ -87,6 +94,13 @@
       {% if author.bluesky %}
         <li><a href="https://bsky.app/profile/{{ author.bluesky }}"><i class="fab fa-fw fa-bluesky icon-pad-right" aria-hidden="true"></i>Bluesky</a></li>
       {% endif %}
+
+      
+      {% if author.discord %}
+        <li><a href="https://discord.com/{{ author.discord }}"><i class="fab fa-fw fa-discord icon-pad-right" aria-hidden="true"></i>Discord</a></li>
+      {% endif %}
+
+
       {% if author.facebook %}
         <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook-f icon-pad-right" aria-hidden="true"></i>Facebook</a></li>
       {% endif %}
