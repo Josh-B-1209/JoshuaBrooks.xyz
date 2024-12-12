@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-ZA"
-title                    : "Joshua Brooks / Site Title"
+title                    : "Biography"
 title_separator          : "-"
 name                     : &name "Joshua Brooks"
 description              : &description "personal description"
-url                      : https://joshuabrooks.xyz # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://www.joshuabrooks.xyz # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "academicpages/JoshuaBrooks.xyz"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,7 +22,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "About ME"
+  name             : "About me"
   pronouns         : "He/Him"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "East London, Eastern Cape"
@@ -215,16 +215,10 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -249,15 +243,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+      
   # _publications
   - scope:
       path: ""
@@ -276,14 +262,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS
@@ -296,7 +274,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: UTC+02:00 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
