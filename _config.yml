@@ -11,7 +11,7 @@ locale                   : "en-ZA"
 title                    : "Biography"
 title_separator          : "-"
 name                     : &name "Joshua Brooks"
-description              : &description "personal description"
+description              : &description ""
 url                      : https://www.joshuabrooks.xyz # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/JoshuaBrooks.xyz"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "About me"
   pronouns         : "He/Him"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Detail orientated engineer looking to advance the mechatronic industry."
   location         : "East London, Eastern Cape"
   #employer         : "Red Brick University"
   uri              : # URL
@@ -103,7 +103,7 @@ comments:
   facebook:
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : "dark" # "light" (default), "dark"
+    colorscheme          : dark # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
